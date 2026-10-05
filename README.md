@@ -9,7 +9,7 @@ An **end-to-end data engineering project**: synthetic e-commerce data → valida
 ELT pipeline → DuckDB star-schema warehouse → interactive BI dashboard —
 containerized and deployed.
 
-**🚀 Live demo:** *(deployed app URL goes here)*
+**🚀 Live demo:** [https://ecommerce-analytics-shiva.streamlit.app](https://ecommerce-analytics-shiva.streamlit.app)
 
 ---
 
