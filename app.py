@@ -119,6 +119,7 @@ pivot = (coh.groupby(["cohort", "periods_since"])["customer_key"]
          .nunique().unstack(fill_value=0))
 cohort_size = pivot[0].replace(0, pd.NA)
 retention = (pivot.divide(cohort_size, axis=0).iloc[-12:] * 100).round(1)
+retention.index = retention.index.astype(str)
 st.plotly_chart(px.imshow(retention, text_auto=".0f", aspect="auto",
                           color_continuous_scale="Blues",
                           labels=dict(x="Months since signup",
